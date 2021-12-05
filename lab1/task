@@ -1,5 +1,5 @@
 
-1.  Create image named 'hello' that prints 'Hello World!' if you run: docker run hello.
+1.  Create image named 'hello' that prints 'Hello World!' if you run: docker run hello
     Constraints: 
            - as a base image, you must use python https://hub.docker.com/_/python?tab=description
            - you must run hello.py to print the statement  
