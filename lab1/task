@@ -1,9 +1,12 @@
 
 1.  Create image named 'hello' that prints 'Hello World!' if you run: docker run hello.
-    Hints: - as a base image, you must use python https://hub.docker.com/_/python?tab=description
-           - use hello.py file that you download from  
-           - Dockerfile for your image must contain instruction FROM, WORKDIR, COPY, ENTRYPOINT, CMD
-2. Create image named 'test_arg:<username>.<group>', tagged with two different usernames. 
+    Constraints: 
+           - as a base image, you must use python https://hub.docker.com/_/python?tab=description
+           - you must run hello.py to print the statement  
+           - Dockerfile for your image must include instruction FROM, WORKDIR, COPY, ENTRYPOINT, CMD
+
+2. Create image named 'test_arg:<username>.<group>', tagged with two different usernames and groups.
    Pass <username> and <group> as ARG to the builder. 
-   Copy file hello.py to the image and change owner of the file to <username>.
-   docker run test_arg:<username> will list the file (ls -l) to show  
+   Copy file hello.py to the image and change owner of the file to <username> and sets group.
+   docker run test_arg:<username> will list the file (ls -l) to show owner and group was set correctly. 
+   As a base image, use UBUNTU.
