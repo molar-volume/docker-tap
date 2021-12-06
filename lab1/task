@@ -3,11 +3,11 @@
     - as a base image, you must use python https://hub.docker.com/_/python?tab=description
     - script hello.py (from this repository) must print the statement
     - Dockerfile for your image must include instruction FROM, WORKDIR, COPY, ENTRYPOINT, CMD
-   Hint: in bash, python script is run like `python3 hello.py`
+   Hint: in linux container, python script is run like `python3 hello.py`
 
 2. Create image named 'test_arg:<username>.<group>', tagged with two different usernames and groups.
-   Pass <username> and <group> as ARG to the builder. 
-   Copy file hello.py to the image and change owner of the file to <username> and sets group.
+   Pass <username> and <group> as ARGs to the builder.
+   Copy file hello.py to the image and change owner of the file to <username> and set group.
 
    docker run test_arg:<username> must list the file (ls -l) to show owner and group was set correctly.
    As a base image, use UBUNTU.
