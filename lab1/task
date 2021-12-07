@@ -11,3 +11,6 @@
 
    docker run test_arg:<username> must list the file (ls -l) to show owner and group was set correctly.
    As a base image, use Alpine (which is the preferred image because of its size).
+
+
+todo COPY
