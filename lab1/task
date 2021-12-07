@@ -13,4 +13,8 @@
    As a base image, use Alpine (which is the preferred image because of its size).
 
 
-todo COPY
+3. Following the task 1. push the image to your private repository in Docker Hub.
+
+4. Following task 2. try to optimize the number of layers of test_arg image.
+
+5. Create bash script that start the alpine base image in detached mode, prints the container ID, stops the container and remove it.
