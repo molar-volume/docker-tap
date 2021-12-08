@@ -13,3 +13,8 @@ Verify that database is shared by testing all 3 instances in the browser.
    a) destroys todo-vol
    b) recreates volume todo-vol
    c) restore data from backup
+
+
+USEFUL COMMANDS FROM PRESENTATION:
+docker run -d --name testing --mount source=my-vol,target=/app ubuntu
+docker run -dp 5000:3000 new_todo
