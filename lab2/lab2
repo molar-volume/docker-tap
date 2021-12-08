@@ -2,7 +2,7 @@
    a) builds todo-manager (source code in app directory)
    b) runs 3 instances of todo-manager on ports 3001, 3002, 3003
    c) the instances must share the DB (which is located in /etc/todos)
-   d) every hour backups the DB content to the host (docker cp)
+   d) every hour backups the DB content to the host
 
 Hints:
    c) create volume todo-vol, and attach it to all three containers
