@@ -1,0 +1,6 @@
+1. Write a shell script that:
+   a) creates bridge networks net1 and net2
+   b) creates 3 containers based on alpine, named alpine1, alpine2, alpine3
+   c) after containers are started, connects alpine1 and alpine2 to net1, alpine2 and alpine3 to net2
+   d) executes ping from each container on each container
+Can alpine1 and alpine3 ping each other?
