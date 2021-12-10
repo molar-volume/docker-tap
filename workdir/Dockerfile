@@ -1,8 +1,0 @@
-FROM alpine
-
-WORKDIR /a
-WORKDIR b
-WORKDIR c
-
-
-
