@@ -1,0 +1,7 @@
+Modify Dockerfile for application go-hello-world.
+   - use alpine base image
+   - use multistage build with 2 stages: builder and prod
+   - use scratch image in prod
+   - build it for multiple architectures, using either manifests or buildx
+   - setup private repository on the localhost:5004, with credentials admin/password
+   - push the multi-arch image in your private repo
