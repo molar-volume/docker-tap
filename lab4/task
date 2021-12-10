@@ -5,3 +5,12 @@ Modify Dockerfile for application go-hello-world.
    - build it for multiple architectures, using either manifests or buildx
    - setup private repository on the localhost:5004, with credentials admin/password
    - push the multi-arch image in your private repo
+
+
+USEFUL COMMANDS:
+
+docker buildx build --push \
+--platform linux/arm/v7,linux/arm64,linux/amd64 \
+--tag sanco/multiarch-example:buildx-latest .
+
+htpasswd -Bc registry.password admin
